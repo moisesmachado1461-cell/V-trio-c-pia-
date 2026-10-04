@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --vitrio-primary: #0F172A;
+    --vitrio-secondary: #D97706;
+    --vitrio-accent: #10B981;
+    --vitrio-radius: 8px;
+    --vitrio-font: 'Plus Jakarta Sans';
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--vitrio-font), system-ui, -apple-system, sans-serif;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print Optimization for Technical Blueprint */
+@media print {
+  header, nav, button {
+    display: none !important;
+  }
+  body, main {
+    background: white !important;
+    color: black !important;
+  }
+  pre, code {
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+  }
+}

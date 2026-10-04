@@ -1,0 +1,6 @@
+{
+  "name": "VÍTRIO - Plataforma E-commerce Multisegmento & Painel Admin",
+  "description": "Especificação técnica completa, blueprint de arquitetura e protótipo interativo do e-commerce multisegmento VÍTRIO com painel de personalização no-code para PMEs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
